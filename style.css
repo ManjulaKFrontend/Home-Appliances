@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&family=Imperial+Script&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+
+}
+:root{
+  --h2:25px;
+  --main-paragraph:20px;
+  --small-paragraph:12px;
+}
+
+body {
+  margin: 0;
+ background-color:rgba(0, 0, 0, 0.637);
+  font-weight: bold;
+  font-family: "kanit";
+
+ 
+}
+section h2{
+  font-size: 30px!important;
+  color: black;
+  font-weight: bold;
+
+  font-style: italic;
+}
+section p{
+  font-weight: lighter;
+}
+section h2 span{
+  color: rosybrown;
+}
+@media only screen and (max-width:500px) and (min-width:200px){
+  .section h2{
+    text-align: center;
+   padding: 0;
+  }
+}
+
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+  
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Black glass box-shadow */
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  position: fixed;width: 100%;
+  z-index: 999;
+}
+.logo{
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  color: pink;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+  
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Black glass box-shadow */
+  padding: 8px 12px;
+  border-radius: 50%;
+
+}
+
+b{
+  background-color: rgba(255, 192, 203, 0.5); /* Transparent pink background */
+  box-shadow: 0 8px 16px rgba(255, 192, 203, 0.5); /* Pink glass box-shadow */
+  padding: 7px 10px;
+  border-radius: 50%;
+
+}
+b i:hover{
+  color: grey;
+}
+.navbar-links {
+  list-style: none;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+}
+
+.navbar-links li {
+
+display: flex;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar-links a:hover{
+color: pink;
+ transition: 0.5s;
+transform: scale(1.1);
+}
+
+.navbar-toggle {
+  cursor: pointer;
+  display: none;
+  font-size: 18px;
+}
+
+@media  only screen and (max-width:500px) and (min-width:200px) {
+ 
+  .navbar-links {
+      display: none;
+    
+  }
+  .logo{
+    font-size:14px;
+  }
+  
+
+  .navbar-links.show {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 55px;
+      left: 0;
+      background-color: black; /* Transparent black background */
+     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Black glass box-shadow */
+      width: 100%;
+      padding: 10px 0;
+      font-size: 14px;
+      height: 40vh;
+  }
+
+  .navbar-links.show li {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+
+  .navbar-toggle {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 12px;
+  border-radius: 50%;
+  font-size: 20px;
+  }
+b{
+  display: none;
+}
+}
+
+/************
+home
+*************/
+#home img {
+ width: 100%;
+ height: 100vh;
+
+}
+button{
+  background-color: rosybrown; /* Transparent black background */
+  
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Black glass box-shadow */
+  color: white;
+ padding: 10px 40px 10px 40px;
+ font-size:15px;
+border: none;
+ 
+
+
+}
+button:hover{
+  background-color: white;
+transform: scale(1.1);
+  color: black;
+  cursor: pointer;
+  transition: 1s;
+}
+.home-content{
+  position:absolute;
+  margin-top: -100vh;
+  text-align: center;
+  color:white;
+  font-weight: bold;
+  padding: 150px;
+
+}
+.home-content p, h2{
+  padding: 30px;
+}
+.home-content p{
+  font-size: var(--main-paragraph);
+  line-height: 30px;
+}
+.home-content h2{
+  font-size: var(--h2);
+}
+@media only screen and (max-width:500px) and (min-width:200px){
+#home img{
+height: 120vh;
+}
+  .home-content{
+    padding: 10px 10px ;
+    margin-top: -100vh;
+  }
+  .home-content h2{
+    font-size: 15px;
+  }
+  .home-content p{
+    font-size: 12px;
+  }
+  button{
+    font-size: 12px;
+  }
+
+}
+@media screen and (max-width:376px) and (min-width:300px){
+  .home-content{
+    margin-top: -110vh;
+  }
+  .home-content h2{
+    font-size: 13px;
+  }
+  .home-content p{
+    font-size: 10px;
+  }
+}
+/**************
+about section
+***************/
+
+#about{
+  display:flex ;
+  padding: 50px 0;
+  color: white;
+  font-weight: bold;
+}
+#about div {
+  padding: 40px;
+}
+#about p{
+  line-height: 30px;
+  font-size: 14px;
+  text-align: justify;
+}
+#about h2{
+  text-align: start;
+  padding: 40px 0;
+}
+#about img{
+  width: 20vw;
+  padding-top:150px;
+
+
+  
+}
+
+@media only screen and (max-width:500px) and (min-width:200px){
+
+  #about{
+    flex-direction: column;
+    padding: 20px;
+  }
+  #about div{
+    padding: 10px;
+  }
+  #about img{
+    width: 100%;
+    height: 60vh;
+    padding: 40px;
+  }
+}
+/*****************
+appliances
+******************/
+#appliance{
+  padding-top: 100px;
+  color: white; 
+}
+
+
+#appliance .product-card a{
+  background-color: orange!important;
+  color: white;
+  padding:10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin: 30px!important;
+  font-weight: lighter;
+  font-size: 14px;
+}
+#appliance .view{
+  background-color: rosybrown!important;
+  font-size: 18px;
+}
+#appliance .product-card a:hover{
+  color: black;
+  transition: 0.5s;
+}
+#appliance .container{
+ padding: 0px 100px!important;
+}
+#appliance .container h4{
+  text-align: center;
+  padding: 30px;
+}
+#appliance p{
+  font-weight: bold;
+ 
+}
+#appliance strong{
+  right: 30px;
+  top: 10px;
+  position: absolute;
+  background-color: white;
+  color: grey;
+  border-radius: 50%;
+  padding:5px 10px;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.5); /* Transparent white background */
+ box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* White glass box-shadow */
+}
+
+#appliance strong:hover{
+  color: white;
+  background-color: orange;
+  cursor: pointer;
+}
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding:0 40px 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+.product-card button{
+  border-radius: 50%;
+  padding: 10px;
+  position: absolute;
+  right: 20px!important;
+  bottom: 25px!important;
+}
+.product-card button:hover{
+  background-color: orange;
+  transition: 0.5s;
+}
+.product-card img {
+  max-width: 200px!important;
+  height: 150px!important;
+  padding-bottom: 20px!important;
+  padding-top: 20px!important;
+}
+.product-card .ratings {
+  color: green;
+}
+
+@media only screen and (max-width:500px) and (min-width:200px){
+  #appliance .container{
+    padding: 0 20px!important;
+  }
+.container{
+  flex-direction:column;
+  
+}
+}
+
+
+
+/*******************
+ carousel***********/
+ .glide {
+  width: 100%; /* Set the width of the carousel */
+  margin: 0 auto; /* Center the carousel */
+  padding: 20px 10px;
+}
+.glide__slides {
+  overflow: hidden; /* Hide overflow */
+}
+.glide__slide {
+  list-style: none; /* Remove default list style */
+}
+.glide__slide img {
+  width: 100%; /* Make images fill the slide */
+  height: 50vh; /* Preserve aspect ratio */
+}
+/**************
+service section
+***************/
+#service {
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#service i{
+  font-size: 30px;
+}
+
+#service strong i{
+ padding: 10px;
+}
+.service{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 0px 100px;
+}
+.service div{
+  background-color: grey;
+margin: 10px;
+border-radius: 10px;
+
+}
+.service div:hover{
+  transform: translateY(10px);
+  transition: 0.5s;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.service p{
+  font-size: var(--small-paragraph);
+  padding: 20px;
+  font-weight: lighter;
+
+}
+#service h1{
+  font-size: 20px;
+ 
+}
+/* why choose us */
+
+
+
+
+@media only screen and (max-width:500px) and (min-width:200px){
+.service{
+  flex-direction: column;
+  padding: 0 10px;
+}
+}
+/******************
+contact section
+******************/
+#contact{
+  color: white;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+padding: 5px 0;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.contact .btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color:rosybrown;
+  color: #fff;
+  cursor: pointer;
+
+}
+.contact .btn:hover{
+  background-color: black;
+transition: 0.5s;
+color: white;
+transform: none;
+
+}
+.error-message {
+  color: red;
+  font-size: 14px;
+}
+.contact{
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+  
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Black glass box-shadow */
+  border-radius: 10px;
+}
+@media only screen and (max-width:500px) and (min-width:200px){
+ 
+}
+
+#contact li a{
+  color: white;
+  padding: 0px!important;
+ 
+  
+}
+@media only screen and (max-width:500px) and (min-width:200px){
+#contact  .links{
+padding-left: 60px;
+}
+}
+#contact li a:hover{
+  color: rosybrown;
+  transition: 0.5s;
+ 
+}
+.footer{
+  background-color: rosybrown;
+  color: white;
+}
+.footer i{
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  background-color: grey;
+  border-radius: 50%;
+
+}
+.footer i:hover{
+  color: black;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.contact{
+  margin: 20px!important;
+}
+#contact h5{
+  color:rosybrown;
+  font-weight: bold;
+}

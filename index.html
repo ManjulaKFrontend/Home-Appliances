@@ -1,0 +1,418 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeTechHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Glide.js CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+  <!-- Glide.js Pagination CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+     <!-- animation links -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <!-- animation links -->
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navbar start -->
+    <nav class="navbar">
+        <figure class="logo"><i class="fa-solid fa-house"></i></figure>
+        <div class="navbar-toggle" id="navbarToggle"><i class="fa-solid fa-bars"></i></div>
+        <ul class="navbar-links" id="navbarLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#appliance">Appliances</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+           <b><i class="fa-solid fa-user"></i></b>
+
+
+        </ul>
+    </nav>
+
+<!-- navbar end -->
+
+<!-- home section start -->
+    <section id="home">
+       
+
+<img src="images/background.jpg" alt="">
+<div class="home-content">
+<h2 class="text-white">"Welcome to Your Ultimate Home Appliance Haven!"</h2>
+    <p>"Transforming houses into homes, our home appliance haven is your one-stop destination for all your domestic needs. Dive into a world of innovation, efficiency, and style as you browse through our curated collection of top-quality appliances. From cutting-edge kitchen gadgets to state-of-the-art laundry solutions, we've got everything you need to make your daily routines a breeze. "</p>
+   <button>View More <i class="fa-solid fa-angle-right pl-2"></i></button>  
+</div> 
+
+</section>
+<!-- home section end -->
+
+
+    <!-- about section  start-->
+    <section id="about"   data-aos="fade-up" data-aos-duration="1500" >
+<div>
+
+    
+        <h2 class="mt-5">About <span> Us</span></h2>
+        <p>
+        "Welcome to "HomeTechHub", where we redefine the essence of home living with our premium range of home appliances.
+        
+        At "HomeTechHub", we understand that your home is your sanctuary, where comfort, convenience, and style seamlessly merge. With this in mind, we have curated a collection of cutting-edge appliances designed to enhance every aspect of your daily life.
+        
+        Our commitment to innovation and quality craftsmanship ensures that each product we offer not only meets but exceeds your expectations. From state-of-the-art kitchen appliances that inspire culinary creativity to advanced laundry solutions that simplify your chores, we have everything you need to elevate your home living experience.
+        
+        But we're not just about functionality – we also believe in style. Our appliances are not only engineered for peak performance but are also designed to complement the aesthetic of your home, adding a touch of sophistication to every room.
+        
+        Beyond our products, we pride ourselves on our dedication to customer satisfaction. Our team of experts is here to guide you every step of the way, helping you find the perfect appliances to suit your unique needs.
+        
+        Experience the difference with "HomeTechHub". Explore our range of home appliances and discover the perfect blend of innovation, quality, and style for your home."</p>
+</div>
+<div class="mt-5">
+
+
+    <img src="images/about-image.jpg" alt="" class="rounded ">
+</div>
+</section>
+<!-- about section end -->
+
+
+<!-- appliances section start -->
+
+<section id="appliance" data-aos="fade-up" data-aos-duration="1500"  >
+  <h2 class="mt-5">Popular <span>Appliances</span></h2>
+  <!-- container start -->
+  <div class="container">
+    <!-- card first section start -->
+    <h4 data-aos="fade-up" data-aos-duration="1500">Cooking Appliances</h4>
+    <div class="row" data-aos="fade-up" data-aos-duration="1500">
+      
+      <!--  -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <strong><i class="fa-solid fa-heart"></i></strong>
+          <img src="images/card1.jpg" alt="Product 1">
+          <h6>Gas Cooktop</h6>
+          <p><i class="fa-solid fa-indian-rupee-sign"></i>.10,000 </p>
+          <p class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+          <a href="">Buy Now</a>
+          <button class="btn btn-success" onclick="addToCart('Gas Cooktop', 50)"><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+      </div>
+      <!--  -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <strong><i class="fa-solid fa-heart"></i></strong>
+          <img src="images/card2.jpg"alt="Product 2">
+          <h6>Electric Oven</h6>
+          <p><i class="fa-solid fa-indian-rupee-sign"></i>.13,000 </p>
+          <p class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
+<a href="">Buy Now</a>
+          <button class="btn btn-success" onclick="addToCart('Electric Oven', 60)"><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+      </div>
+      <!--  -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <strong><i class="fa-solid fa-heart"></i></strong>
+          <img src="images/card3.jpg" alt="Product 3">
+          <h6>Microwave Oven</h6>
+          <p><i class="fa-solid fa-indian-rupee-sign"></i>.13,799 </p>
+          <p class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
+<a href="">Buy Now</a>
+          <button class="btn btn-success" onclick="addToCart('Microwave Oven', 70)"><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+      </div>
+      <!--  -->
+   
+    </div>
+    <!-- card 1st section end -->
+    <!-- card 2nd section -->
+    <h4 data-aos="fade-up" data-aos-duration="1500">Laundry Appliances</h4>
+    <div class="row" data-aos="fade-up" data-aos-duration="1500">
+      <!--  -->
+      
+      <div class="col-md-4">
+        <div class="product-card">
+          <strong><i class="fa-solid fa-heart"></i></strong>
+          <img src="images/card4.jpg" alt="Product 1">
+          <h6>Front Load Washer </h6>
+          <p><i class="fa-solid fa-indian-rupee-sign"></i>.20,000 </p>
+          <p class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+ <a href="">Buy Now</a>
+          <button class="btn btn-success" onclick="addToCart('Front Load Washer', 50)"><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+      </div>
+      <!--  -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <strong><i class="fa-solid fa-heart"></i></strong>
+          <img src="images/card5.jpg"alt="Product 2">
+          <h6>Electric Dryer</h6>
+          <p><i class="fa-solid fa-indian-rupee-sign"></i>.19,000 </p>
+          <p class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
+<a href="">Buy Now</a>
+          <button class="btn btn-success" onclick="addToCart('Electric Dryer', 60)"><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+      </div>
+      <!--  -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <strong><i class="fa-solid fa-heart"></i></strong>
+          <img src="images/card6.jpg" alt="Product 3">
+          <h6>Waher Dryer Combo</h6>
+          <p><i class="fa-solid fa-indian-rupee-sign"></i>.23,000 </p>
+          <p class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
+       <a href="">Buy Now</a>
+          <button class="btn btn-success" onclick="addToCart('Washer Dryer Combo', 70)"><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+      </div>
+    </div>
+      <!--  -->
+      
+    <!-- card 2nd section end -->
+    <!-- card 3rd section start -->
+    <h4 data-aos="fade-up" data-aos-duration="1500" >Refrigeration Appliances</h4>
+    <div class="row" data-aos="fade-up" data-aos-duration="1500">
+      <!--  -->
+      
+      <div class="col-md-4">
+        <div class="product-card">
+          <strong><i class="fa-solid fa-heart"></i></strong>
+          <img src="images/card7.jpg" alt="Product 1">
+          <h6>French Door Refrigerator </h6>
+          <p><i class="fa-solid fa-indian-rupee-sign"></i>.25,000 </p>
+          <p class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+        <a href="">Buy Now</a>
+          <button class="btn btn-success" onclick="addToCart('French Door Refrigerator', 50)"><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+      </div>
+      <!--  -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <strong><i class="fa-solid fa-heart"></i></strong>
+          <img src="images/card8.jpg"alt="Product 2">
+          <h6>Side-by-Side Refrigerator</h6>
+          <p><i class="fa-solid fa-indian-rupee-sign"></i>.28,000 </p>
+          <p class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
+        <a href="">Buy Now</a>
+          <button class="btn btn-success" onclick="addToCart('Side-by-Side Refrigerator', 60)"><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+      </div>
+      <!--  -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <strong><i class="fa-solid fa-heart"></i></strong>
+          <img src="images/card9.jpg" alt="Product 3">
+          <h6>Bottom-Freezer Refrigerator</h6>
+          <p><i class="fa-solid fa-indian-rupee-sign"></i>.21,000 </p>
+          <p class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
+<a href="">Buy Now</a>
+          <button class="btn btn-success" onclick="addToCart('Bottom-Freezer Refrigerator', 70)"><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+      </div>
+
+
+    <!-- card 3rd section end-->
+</div>
+<button class="d-block mx-auto my-5 view border-0" data-aos="fade-up" data-aos-duration="1500">View All Items <i class="fa-solid fa-circle-arrow-right pl-3"></i></button>
+  <!-- container end -->
+  </div>
+
+  
+</section>
+<!-- carousel start -->
+<div class="glide">
+  <div class="glide__track" data-glide-el="track">
+    <ul class="glide__slides">
+      <li class="glide__slide"><img src="images/slide1.jpg" alt="Image 1"></li>
+      <li class="glide__slide"><img src="images/slide2.jpg" alt="Image 2"></li>
+      <li class="glide__slide"><img src="images/slide3.jpg" alt="Image 3"></li>
+      <li class="glide__slide"><img src="images/slide4.jpg" alt="Image 3"></li>
+      <li class="glide__slide"><img src="images/slide5.jpg" alt="Image 3"></li>
+      <li class="glide__slide"><img src="images/slide6.jpg" alt="Image 3"></li>
+
+    </ul>
+  </div>
+  <div class="glide__bullets" data-glide-el="controls[nav]">
+    <button class="glide__bullet" data-glide-dir="=0"></button>
+    <button class="glide__bullet" data-glide-dir="=1"></button>
+    <button class="glide__bullet" data-glide-dir="=2"></button>
+    <button class="glide__bullet" data-glide-dir="=3"></button>
+    <button class="glide__bullet" data-glide-dir="=4"></button>
+    <button class="glide__bullet" data-glide-dir="=5"></button>
+  </div>
+</div>
+<!-- carousel end -->
+
+<!-- service section start -->
+<section id="service" data-aos="fade-up" data-aos-duration="1500">
+
+<h2 class="mt-5">Our <span>Services</span></h2>
+
+<div class="service" data-aos="fade-up" data-aos-duration="1500">
+
+  <div>
+    <strong><i class="fas fa-wrench"></i></strong>
+    <h1>Appliance Repair</h1>
+    <p>Our skilled technicians are trained to diagnose and repair a wide range of appliance issues promptly. From minor fixes to major repairs, we'll get your appliances back up and running in no time.</p>
+  </div>
+
+
+  <div>
+    <strong><i class="fas fa-tools"></i></strong>
+    <h1>Preventive Maintenance</h1>
+    <p>Regular maintenance is key to extending the lifespan of your appliances and preventing costly breakdowns. Our preventive maintenance services will keep your appliances in peak condition, saving you time and money in the long run.</p>
+  </div>
+
+  <div >
+    <strong><i class="fas fa-cogs"></i></strong>
+    <h1>Installation Services</h1>
+    <p>Need help installing a new appliance? We've got you covered. Our technicians will ensure that your new appliance is installed correctly and safely, so you can start using it with confidence.</p>
+  </div>
+
+  <div >
+    <strong><i class="fas fa-search"></i></strong>
+    <h1>Diagnostic Services</h1>
+    <p>Not sure what's wrong with your appliance? Our diagnostic services will help identify the issue quickly and accurately, so we can recommend the best course of action for repair.</p>
+  </div>
+</div>
+
+
+<h2 class="text-center" data-aos="fade-up" data-aos-duration="1500">Why Choose Us?</h2>
+
+  
+    
+      <div class="service choose" data-aos="fade-up" data-aos-duration="1500">
+        <div>
+          <strong><i class="fas fa-tools"></i></strong>
+          <h1>Expert Technicians</h1>
+          <p>Our team consists of skilled technicians who are experts in repairing all types of home appliances.</p>
+        </div>
+     
+     
+        <div>
+          <strong><i class="fas fa-clock"></i></strong>
+          <h1>Prompt Service</h1>
+          <p>We understand the urgency of appliance issues. That's why we provide prompt and efficient service to our customers.</p>
+        </div>
+     
+      
+        <div>
+          <strong><i class="fas fa-wallet"></i></strong>
+          <h1>Affordable Rates</h1>
+          <p>We believe in providing high-quality service at affordable rates, ensuring our customers get value for their money.</p>
+        </div>
+   
+  
+</div>
+
+</section>
+
+<!-- service section end -->
+<!-- contact section start -->
+<section id="contact"  data-aos="fade-up" data-aos-duration="1500">
+  <h2 class="mb-4 mt-5 pt-5">Contact  <span>Us</span></h2>
+  
+<div class="container">
+
+  <div class="row justify-content-center  d-flex ">
+
+
+
+
+<div class="col-md-3 list-unstyled text-white links"  data-aos="fade-up" data-aos-duration="1500" >
+
+ 
+
+   <h5 class="mb-5 mt-5 ">Useful Links</h5>
+  <li class="mt-4"><a href="#home">Home</a></li>
+  <li class="mt-4"><a href="#about">About</a></li>
+  <li class="mt-4"><a href="#appliance">Appliances</a></li>
+  <li class="mt-4"><a href="#service">Services</a></li>
+  <li class="mt-4 mb-5"><a href="#contact">Contact</a></li>
+ 
+</div>
+
+
+<div class="col-md-3 list-unstyled links mb-5 "  data-aos="fade-up" data-aos-duration="1500">
+  <h5 class="mb-5 mt-5 ">Contact Us</h5>
+  <li><a href=""><i class="fa-solid fa-phone mt-4 pr-4 "></i>+91 9876567687</a></li>
+  <li><a href=""><i class="fa-solid fa-envelope mt-4 pr-4 "></i>HometechHub@gmail.com</a></li>
+  <li><a href=""><i class="fa-solid fa-location-dot mt-4 pr-4 mb-5 "></i>Chennai.</a></li>
+
+</div>
+
+
+
+
+
+
+    <!-- form -->
+ <div class="col-md-5 contact mt-5 p-5 text-end "  data-aos="fade-up" data-aos-duration="1500">
+
+  <form id="myForm">
+    <div class="form-group">
+     
+      <input type="text" id="name" name="name" placeholder="Enter Name">
+      <span id="nameError" class="error-message"></span>
+    </div>
+    <div class="form-group">
+
+      <input type="email" id="email" name="email " placeholder="Enter Email">
+      <span id="emailError" class="error-message"></span>
+    </div>
+    <div class="form-group">
+    
+      <textarea id="message" name="message" rows="4" placeholder="Subject"></textarea>
+      <span id="messageError" class="error-message"></span>
+    </div>
+    <button type="submit" class="btn">Submit</button>
+  </form>
+ </div>
+
+
+
+</div>
+</div>
+
+
+</section>
+
+<!-- contact ssection end -->
+
+<!-- footer section start -->
+<div class="container-fluid footer ">
+<div class="row p-2">
+<div class="col-md-6 text-center p-2 ">
+  <i class="fa-brands fa-facebook"></i>
+  <i class="fa-brands fa-instagram"></i>
+  <i class="fa-brands fa-square-twitter"></i>
+  <i class="fa-brands fa-youtube"></i>
+
+</div>
+
+<div class="col-md-6 p-2 " >
+  <p class="foot text-center">&copy;Designed By Manjula 2024</p>
+</div>
+  </div>
+</div>
+<!-- footer section end -->
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>  
+</body>
+</html>
